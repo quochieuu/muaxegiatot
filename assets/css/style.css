@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul.header--list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+ul.header--list li:not(:last-child) {
+    margin-right: 15px;
+}
+
+ul.header--list li a img {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+ul.header--list li {
+    float: left;
+    display: block;
+    text-align: center;
+}
+
+ul.header--list li a span {
+    color: #6C6E72;
+    font-weight: 600;
+    margin-top: 5px;
+    display: block;
+}
+
+ul.header--list li a span:hover {
+    color: #61BE5A;
+    text-decoration: none!important;
+}
+
+ul.header--list li a:hover {
+    text-decoration: none;
+}
+
+
+.menu-wrapper {
+    padding: 15px 0;
+    box-shadow: 3px 4px 7px 0px #cccccc2e;
+}
+
+.header-action a {
+    background: #61BE5A;
+    border-radius: 8px;
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    padding: 14px 45px;
+    float: right;
+    text-transform: uppercase;
+}
+
+.header-action a:hover {
+    text-decoration: none;
+}
+
+.search-wrapper {
+    background: #fafafa;
+    padding: 30px 0;
+}
+
+.search-inner input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 11px 15px;
+    width: 100%;
+}
+
+.row.search-inner select {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 11px 15px;
+    background: transparent;
+}
+
+.row.search-inner button {
+    background: #61BE5A;
+    border-radius: 5px;
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    padding: 14px 45px;
+    float: right;
+    text-transform: uppercase;
+}
+
+img.search-ico {
+    display: inline-block;
+    margin-left: -33px;
+    float: left;
+    margin-top: 14px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    position: relative;
+}
+
+.search-inner input { 
+    float: left;
+    display: inline-block;
+}
+
+.bike-item--img {
+    width: 190px;
+    height: 142px;
+    background-size: cover;
+    background-position: center center;
+    margin-right: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.list-bike--item {
+    display: flex;
+}
+
+.list-bike--content {
+    flex: 1;
+}
+
+.save-action {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.bike--info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(60,57,58,.6);
+    text-align: center;
+}
+
+.bike--info {
+    padding: 5px;
+}
+
+.bike--info span {
+    color: #fff;
+    font-size: 13px;
+}
+
+.list-bike--content ul li span {
+    font-size: 15px;
+}
+.list-bike--content ul li img {
+    width: 25px;
+    height: 25px;
+    margin-top: 2px;
+}
+.list-bike--content ul li {
+    width: 50%;
+    float: left;
+}
+.list-bike--content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.list-bike--content h3 {
+    font-size: 19px;
+}
+.list-bike--content {
+    flex: 1;
+}
+
+.bike-price-call {
+    display: flex;
+    clear: both;
+    justify-content: space-between;
+}
+
+.bike-price-call a img {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+.bike-price-call a span {
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+}
+.bike-price-call a {
+    background: #61be5a;
+    border-radius: 8px;
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 2px 15px;
+}
+.bike-price-call span {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #61be5a;
+}
+.bike-price-call {
+    display: flex;
+    clear: both;
+    justify-content: space-between;
+}
+
+.list-bike--item {
+    margin-bottom: 25px;
+}
+
+h3.page-title {
+    clear: both;
+    width: 100%;
+    padding: 15px;
+    font-size: 21px;
+}
