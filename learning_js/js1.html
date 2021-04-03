@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="hienthi">Mặc định</div>
+    <input type="text" value="nhập vào cái chi đó" id="nhap">
+
+    <img id="hinh" src="https://file1.dangcongsan.vn/data/0/images/2020/11/16/hanhts/960x0.jpg?dpi=150&quality=100&w=680" alt="">
+    <br>
+    <a href="#" id="hienthihinh">Hiển thị hình</a> --- 
+    <a href="#" id="anhinh">Ẩn hình</a> --- 
+
+    <a href="#" id="toogle">toogle</a>
+
+    <div class="theoclass">class mặc định</div>
+
+    <p id="bam">Bấm để hiển thị số</p>
+
+    <input type="file" id="thayd">
+
+    <input type="text" id="event_key_up">
+
+    <div id="mouse" style="width: 50px; height: 50px; background: red;">Mouse</div>
+
+    <input type="number" value="4545445" id="laygiatri">
+    <p id="xuatgiatri"></p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <script>
+        // Thay đổi nội dung bên trong HTML 
+        $("#hienthi").html("chữ mới");
+
+        // Thay đổi nội dung css
+        $("#hienthi").css("color", "red");
+        $("#hienthi").css("font-size", "22px");
+
+        // Thay đổi attribute
+        $("#hienthi").attr("style","color: green; font-size: 50px;");
+
+        // Atrr không cho nhập
+        $("#nhap").attr("readonly","readonly");
+        $("#nhap").attr("type","number");
+
+        $("#nhap").removeAttr("readonly");
+
+        // Ẩn - hiển thị hình
+        $("#hienthihinh").click(function () {
+            // $("#hinh").css("display","block");
+            // $("#hinh").fadeIn();
+            // $("#hinh").show();
+            $("#hinh").removeAttr("style");
+        })
+
+        $("#anhinh").click(function () {
+            $("#hinh").css("display","none");
+            // $("#hinh").fadeOut();
+            // $("#hinh").hide();
+        })
+
+        $("#toogle").click(function() {
+            $("#hinh").toggle();
+        });
+
+
+        $(".theoclass").html("biến hình");
+
+        $("#bam").click(function () {
+            $("#bam").html("0123456789");
+        })
+
+        $("#thayd").change(function () {
+            $("#hienthi").html("ảnh đã được chọn");
+            alert("Chọnn ảnh thành công");
+        })
+
+        // nút bất kỳ trên bàn phím
+        $("#event_key_up").keyup(function () {
+            $("#hienthi").html("đã đổi"); 
+        })
+
+        $("#mouse").mouseenter(function () {
+            $("#mouse").html("rời khỏi");
+            $("#mouse").height(500);
+            $("#mouse").width(10);
+            confirm("đã rê");
+        })
+
+        var gt = $("#laygiatri").val();
+        $("#xuatgiatri").html(gt);
+
+    </script>
+</body>
+</html>
