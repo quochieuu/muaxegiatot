@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <script>
+        var text1 = "Dai hoc dong a";
+        // console.log(text1);
+        // console.log(text1.length);
+        // console.log(text1.indexOf("a"));
+        // console.log(text1.search("a"));
+        // console.log(text1.lastIndexOf("a"));
+
+        // console.log(text1.slice(4, 7));
+        // console.log(text1.slice(-12, -2));
+        // console.log(text1.slice(3));
+        // console.log(text1.substr(4, 8));
+
+        var text2 = "Khóa học lập trình web với ASP.NET";
+        var from = "àáãảạăằắẳẵặâầấẩẫậèéẻẽẹêềếểễệđùúủũụưừứửữựòóỏõọôồốổỗộơờớởỡợìíỉĩịäëïîöüûñçýỳỹỵỷ",
+            to   = "aaaaaaaaaaaaaaaaaeeeeeeeeeeeduuuuuuuuuuuoooooooooooooooooiiiiiaeiiouuncyyyyy";
+        for (var i=0, l=from.length ; i < l ; i++) {
+            text2 = text2.replace(RegExp(from[i], "gi"), to[i]);
+        }
+
+
+        console.log(text2.replace(/ /g,'-').toLocaleLowerCase());
+    </script>
+</body>
+</html>
